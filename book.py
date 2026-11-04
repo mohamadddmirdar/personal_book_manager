@@ -1,7 +1,8 @@
 import json
-def show_books(book):
-    for i in book:
-        print (i)
+
+def show_books(books):
+    for book in books:
+        print("your book:", book["name"], "-priority: ", book["priority"])
 
 def save_books(books):
     with open("books.json", "w", encoding="utf-8") as file:
@@ -12,7 +13,6 @@ def load_books():
     try:
         with open("books.json", "r", encoding="utf-8") as file:
             return json.load(file)
-    except FileExistsError:
+    except FileNotFoundError:
             return []
     
-
