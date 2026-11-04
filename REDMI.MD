@@ -1,4 +1,4 @@
-# Personal Task Manager
+# Personal Task  Manager
 ![Static Badge](https://img.shields.io/badge/python-blue?logo=python&logoColor=white)
 A simple task manager built with python
 
@@ -32,7 +32,7 @@ personal_task_manager_main/
 ## Installaion
 Install the requires packages:
 ```bash
-python -m pip install -r requirements.txt
+python -m pip install -r  requirements.txt
 ```
 
 
