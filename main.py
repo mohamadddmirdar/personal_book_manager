@@ -9,7 +9,6 @@ name = input("Enter your name: ")
 print("welcome",name)
 
 admin_mode = input("Do you want to enter admin mode? (yes/no) ")
-
 if admin_mode == "yes":
     password = input("Enter admin password: ")
     if password == os.getenv("admin_pass"):
@@ -28,7 +27,6 @@ for i in range(count):
         "priority" : priority
     }
     tasks.append(task)
-
 
 show_tasks(tasks)
 save_tasks(tasks)

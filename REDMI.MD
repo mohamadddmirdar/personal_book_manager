@@ -7,7 +7,13 @@ A simple task manager built with python
 - save books
 - load saved books
 - admin mode
-  
+- set task priority
+
+## Task priority
+each task can have one of this priority levels :
+- low
+- medium
+- high 
 ## Requirments
 - Python
 - python-dotenv
