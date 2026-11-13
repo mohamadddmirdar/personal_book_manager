@@ -16,7 +16,7 @@ each task can have one of this priority levels :
 - high 
 ## Requirments
 - Python
-- python-dotenv
+- python_dotenv
 
 
 

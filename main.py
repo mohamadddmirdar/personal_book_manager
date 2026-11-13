@@ -1,12 +1,12 @@
 
-from tasks import show_tasks, save_tasks, load_tasks
+from book import show_books, save_books, load_books
 from dotenv import load_dotenv
 import os
 
 load_dotenv()
 
 name = input("Enter your name: ")
-print("welcome",name)
+print("welcoomeee",name)
 
 admin_mode = input("Do you want to enter admin mode? (yes/no) ")
 if admin_mode == "yes":
@@ -16,7 +16,7 @@ if admin_mode == "yes":
     else:
         print("wrong password")
 
-tasks = load_tasks()
+tasks = load_books()
 count = int(input("how many tasks do you wants to add? "))
 
 for i in range(count):
@@ -28,5 +28,11 @@ for i in range(count):
     }
     tasks.append(task)
 
+<<<<<<< HEAD
 show_tasks(tasks)
 save_tasks(tasks)
+=======
+
+show_books(tasks)
+save_books(tasks)
+>>>>>>> eaeebe7969d84f72944cd4ac320ad85f4a1439e3
