@@ -1,13 +1,19 @@
 # Personal Task  Manager
 ![Static Badge](https://img.shields.io/badge/python-blue?logo=python&logoColor=white)
-A simple task manager built with python
+A simple task manager built with python for learning git and github
 
 ## Features
 - add multiple books
 - save books
 - load saved books
 - admin mode
-  
+- set task priority
+
+## Task priority
+each task can have one of this priority levels :
+- low
+- medium
+- high 
 ## Requirments
 - Python
 - python_dotenv
