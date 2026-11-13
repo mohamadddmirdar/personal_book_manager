@@ -10,7 +10,7 @@ A simple task manager built with python
   
 ## Requirments
 - Python
-- python-dotenv
+- python_dotenv
 
 
 
