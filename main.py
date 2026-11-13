@@ -6,7 +6,9 @@ import os
 load_dotenv()
 
 name = input("Enter your name: ")
-print("welcoomeee",name)
+ 
+print(" Welcome ",name)
+
 
 admin_mode = input("Do you want to enter admin mode? (yes/no) ")
 if admin_mode == "yes":
@@ -28,11 +30,8 @@ for i in range(count):
     }
     tasks.append(task)
 
-<<<<<<< HEAD
-show_tasks(tasks)
-save_tasks(tasks)
-=======
+
 
 show_books(tasks)
 save_books(tasks)
->>>>>>> eaeebe7969d84f72944cd4ac320ad85f4a1439e3
+
