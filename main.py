@@ -1,37 +1,35 @@
-
-from book import show_books, save_books, load_books
+from books import show_books, save_books, load_books
 from dotenv import load_dotenv
 import os
 
 load_dotenv()
 
-name = input("Enter your name: ")
- 
-print(" Welcome ",name)
+name = input("Please enter your name: ")
 
+print("** welcome **", name)
 
 admin_mode = input("Do you want to enter admin mode? (yes/no) ")
+
 if admin_mode == "yes":
     password = input("Enter admin password: ")
-    if password == os.getenv("admin_pass"):
+    if password == os.getenv("BOOK_MANAGER_ADMIN_PASSWORD"):
         print("admin mode activated")
     else:
         print("wrong password")
 
-tasks = load_books()
-count = int(input("how many tasks do you wants to add? "))
+count = int(input("How many books do you want to add? "))
+
+books_list = load_books()
 
 for i in range(count):
-    task_name = input("Enter your task: ")
+    book_name = input("Please enter your book's name: ")
     priority = input("Enter priority(low/medium/high): ")
-    task = {
-        "name" : task_name,
+    book = {
+        "name" : book_name,
         "priority" : priority
     }
-    tasks.append(task)
+    books_list.append(book)
+    print("Book added successfully")
 
-
-
-show_books(tasks)
-save_books(tasks)
-
+show_books(books_list)
+save_books(books_list)
